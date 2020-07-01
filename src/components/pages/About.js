@@ -34,7 +34,7 @@ export default class About extends Component {
                     sed lorem ac faucibus. Sed magna arcu, imperdiet cursus feugiat id, pulvinar eget nulla. Vivamus vitae molestie nunc, sit amet eleifend nisl. Vestibulum ut ante 
                     pharetra, congue nulla et, fermentum sem. Vestibulum tincidunt pulvinar iaculis.
                 </p>
-                <img src={require("../assets/images/logos/logo512.png")} alt="logo" className="large responsive center" />
+                <img src={require("../../assets/images/logos/logo512.png")} alt="logo" className="large responsive center" />
                 <p>
                     Sed tristique mi felis, quis rhoncus felis pellentesque ac. Aenean condimentum eu felis sed lacinia. Nam eget maximus justo. Aliquam mollis lorem et magna viverra lacinia. 
                     Proin quam augue, fringilla a lobortis rhoncus, semper vel dui. Vestibulum gravida massa elit, vel sodales ex porttitor quis. Nam pretium tempor odio. Nam felis eros, 

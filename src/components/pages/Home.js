@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import ContactForm from '../misc/ContactForm';
 
 export default class Home extends Component {
     render() {
@@ -25,6 +26,9 @@ export default class Home extends Component {
                         </Col>
                     </Row>
                 </Grid>
+                <br/>
+                <h1>Contact Us</h1>
+                <ContactForm />
             </div>
         )
     }
