@@ -9,7 +9,7 @@ export default class About extends Component {
                 {/* TODO: update content */}
                 <p>
                     This project was built from Doug's boilerplate for 
-                    React.js <a rel="noopener noreferrer" href="https://github.com/facebook/create-react-app" target="_blank">dougs-react-boiler</a> used for web apps and was 
+                    React.js <a rel="noopener noreferrer" href="https://github.com/douglasrcjames/dougs-react-boiler" target="_blank">dougs-react-boiler</a> used for web apps and was 
                     further bootstrapped from <a rel="noopener noreferrer" href="https://github.com/facebook/create-react-app" target="_blank">Create React App</a>. 
                     In this setup, we have Doug's base CSS library, base React components (like Header and Footer), directories structured, React Router ready to go, and more! 
                 </p>
