@@ -344,6 +344,17 @@ span {
     font-weight: 500;
 }
 
+.l-icon {
+    font-size: 50px !important;
+    padding: 10px;
+}
+
+.xl-icon {
+    font-size: 75px !important;
+    padding: 10px;
+}
+
+
 
 
 

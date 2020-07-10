@@ -13,21 +13,24 @@ export default class Home extends Component {
                 <Grid fluid>
                     <Row center="xs">
                         <Col xs={12} sm={4}>
+                            <i className="fas fa-seedling xl-icon" />
                             <h3>Column 1</h3>
                             <p>More information below</p>
                         </Col>
                         <Col xs={12} sm={4}>
+                            <i className="fas fa-tree xl-icon" />
                             <h3>Column 2</h3>
                             <p>More information below</p>
                         </Col>
                         <Col xs={12} sm={4}>
+                            <i className="fas fa-globe-africa xl-icon" />
                             <h3>Column 3</h3>
                             <p>More information below</p>
                         </Col>
                     </Row>
                 </Grid>
                 <br/>
-                <h1>Contact Us</h1>
+                <h1>Contact</h1>
                 <ContactForm />
             </div>
         )
