@@ -358,6 +358,14 @@ body {
     margin: 0 1% 0 1%;
 }
 
+.s-margin-r {
+    margin: 0 1% 0 0;
+}
+
+.s-margin-l {
+    margin: 0 0 0 1%;
+}
+
 .s-margin-b { 
     margin: 0 0 1% 0;
 }
