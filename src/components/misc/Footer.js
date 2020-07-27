@@ -20,7 +20,6 @@ export default class Footer extends Component {
                             &nbsp;&nbsp;<Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/more">More</Link>&nbsp;&nbsp;
                         </div>
 
-
                         <div className="center">
                             &copy;
                             {' '}
