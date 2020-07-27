@@ -21,6 +21,20 @@ export default class Footer extends Component {
                         </div>
 
                         <div className="center">
+                            {/* TODO: update social links */}
+                            <div className="center-text">
+                                <a href="https://twitter.com/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
+                                    <i className="fab fa-twitter" />
+                                </a>
+                                &nbsp;&nbsp;
+                                <a href="https://www.facebook.com/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
+                                    <i className="fab fa-facebook"/>
+                                </a>
+                                &nbsp;&nbsp;
+                                <a href="https://www.instagram.com/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
+                                    <i className="fab fa-instagram"/>
+                                </a>
+                            </div>
                             &copy;
                             {' '}
                             {this.state.year}
@@ -30,35 +44,26 @@ export default class Footer extends Component {
                         </div>
 
                         <div className="right">
-                            <a href="https://twitter.com/" className="black">
-                                <i className="fab fa-twitter" />
-                            </a>
-                            &nbsp;&nbsp;
-                            <a href="https://www.facebook.com/" className="black">
-                                <i className="fab fa-facebook"/>
-                            </a>
-                            &nbsp;&nbsp;
-                            <a href="https://www.yelp.com/" className="black">
-                                <i className="fab fa-yelp"/>
-                            </a>
+                            <i className="fas fa-tools"/>&nbsp;Webmaster <a href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer">douglasrcjames</a> 
                             &nbsp;&nbsp;
                         </div>
                     </MediaQuery>
                     <MediaQuery maxWidth={900}>
-                        <div className="s-padding-t-b">
-                            <a href="https://twitter.com/" className="black">
+                        <div>
+                            {/* TODO: update social links */}
+                            <a href="https://twitter.com/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
                                 <i className="fab fa-twitter" />
                             </a>
                             &nbsp;&nbsp;
-                            <a href="https://www.facebook.com/" className="black">
+                            <a href="https://www.facebook.com/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
                                 <i className="fab fa-facebook"/>
                             </a>
                             &nbsp;&nbsp;
-                            <a href="https://www.yelp.com/" className="black">
-                                <i className="fab fa-yelp"/>
+                            <a href="https://www.instagram.com/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
+                                <i className="fab fa-instagram"/>
                             </a>
                         </div>
-                        <div className="s-padding-t-b">
+                        <div>
                             &copy;
                             {' '}
                             {this.state.year}
@@ -66,7 +71,10 @@ export default class Footer extends Component {
                             {/* TODO: update name */}
                             Doug's React Boiler
                         </div>
-                        <div className="s-padding-t-b">
+                        <div>
+                            <i className="fas fa-tools"/>&nbsp;Webmaster <a href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer">douglasrcjames</a> 
+                        </div>
+                        <div className="s-padding-b">
                             <Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/more">More</Link> 
                         </div>
                     </MediaQuery>

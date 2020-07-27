@@ -78,8 +78,10 @@ Storage setup is just $ `What file should be used for Storage Rules?` storage.ru
 This will build your current setup and deploy everything including Functions, Firestore, Storage, etc rules, and Hosting to Firebase.
 
 ### Other commands: 
+- Set Firebase config variables:
+$ `firebase functions:config:set emails.hello.user="email@email.com" emails.hello.password="1234password"`
 
-- View the current Firebase env config variables:
+- View the current Firebase config variables:
 $ `firebase functions:config:get`
 
 - Call those firebase.config() variables:
@@ -88,9 +90,9 @@ $ `firebase functions:config:get`
 - Setup multiple projects in the same folder, you can add alias for each project (1 will be default):
  $ `firebase use --add`
 
-- Use firebase commands as normal, but with the `--project=test` suffix: 
- $ `firebase deploy --project=test`
- $ `firebase functions:config:set --project=test emails.hello.user="email@email.com" emails.hello.password="1234password"`
+- For interacting with specific alias, use firebase commands as normal, but with the `--project=alias` suffix: 
+ $ `firebase deploy --project=alias`
+ $ `firebase functions:config:set --project=alias --only functions`
 
 - Deploy only the Functions:
  $ `firebase deploy --only functions`
@@ -108,7 +110,7 @@ $ `firebase functions:config:get`
  $ `firebase deploy -m "Deploying the best new feature ever."`
 
 - Use the --debug command appended to the end to get more info:
- $ `firebase deploy --project=test --debug`
+ $ `firebase deploy --debug`
 
 ## Learn More
 
@@ -131,13 +133,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 ### Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 

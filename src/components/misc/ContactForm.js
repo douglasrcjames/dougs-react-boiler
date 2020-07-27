@@ -11,12 +11,11 @@ export default class ContactForm extends Component {
         this.addMessage = this.addMessage.bind(this);
     }
     
-
     addMessage(values){
         firestore.collection('messages').add({
             email: values.email,
             name: values.name,
-            body: values.body,
+            message: values.message,
             timestamp: Date.now(),
         }).then(
             alert("Message submitted successfully.")
@@ -27,7 +26,7 @@ export default class ContactForm extends Component {
         const initialFormState = {
             email: "",
             name: "",
-            body: ""
+            message: ""
           };
 
         return (
@@ -92,12 +91,12 @@ export default class ContactForm extends Component {
                                             required
                                             onChange={props.handleChange}
                                             placeholder="Detail what you want to say here."
-                                            name="body"
-                                            value={props.values.body}
+                                            name="message"
+                                            value={props.values.message}
                                         />
                                         <br/>
-                                        {props.errors.body && props.touched.body ? (
-                                            <span className="red">{props.errors.body}</span>
+                                        {props.errors.message && props.touched.message ? (
+                                            <span className="red">{props.errors.message}</span>
                                         ) : (
                                             ""
                                         )}
