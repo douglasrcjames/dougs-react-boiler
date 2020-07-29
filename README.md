@@ -59,19 +59,26 @@ Firebase is my preferable setup for database, server functions, and SSL hosting,
 Prompted for your firebase credentials, input them
 
 ### `firebase init`
-
+  (* note if you don't want to use my settings, just Overwrite )
   1. $ `Proceed?` Yes
   2. Select what you need for your project, but I usually select Firestore, Functions, Hosting, and sometimes Storage
   3. Use Existing project
   4. $ `What file should be used for Firestore Rules?` firestore.rules
-  5. $ `What file should be used for Firestore indexes?` firestore.indexes.json
-  6. $ `What language would you like to use to write Cloud Functions?` TypeScript 
-  7. $ `Do you want to use TSLint to catch probable bugs and enforce style?` Yes
-  8. $ `Do you want to install dependencies with npm now?` Yes
-  9. $ `What do you want to use as your public directory?` build
-  10. $ `Configure as a single-page app (rewrite all urls to /index.html)?` Yes
-
-Storage setup is just $ `What file should be used for Storage Rules?` storage.rules
+  5. $ `File firestore.rules already exists. Do you want to overwrite it with the Firestore Rules from the Firebase Console?` No
+  6. $ `What file should be used for Firestore indexes?` firestore.indexes.json
+  7. $ `File firestore.indexes.json already exists. Do you want to overwrite it with the Firestore Indexes from the Firebase Console?` No
+  8. $ `What language would you like to use to write Cloud Functions?` TypeScript 
+  9. $ `Do you want to use TSLint to catch probable bugs and enforce style?` Yes
+ 10. $ `File functions/package.json already exists. Overwrite?` No
+ 11. $ `File functions/tslint.json already exists. Overwrite?` No
+ 12. $ `File functions/tsconfig.json already exists. Overwrite?` No
+ 13. $ `File functions/src/index.ts already exists. Overwrite?` No
+ 14. $ `File functions/.gitignore already exists. Overwrite?` No
+ 15. $ `Do you want to install dependencies with npm now?` Yes
+ 16. $ `What do you want to use as your public directory?` build
+ 17. $ `Configure as a single-page app (rewrite all urls to /index.html)?` Yes
+ Storage setup is: 
+ 18.  $ `What file should be used for Storage Rules?` storage.rules
 
 ### `npm run-script build` then `firebase deploy`
 
