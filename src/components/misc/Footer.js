@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MediaQuery from "react-responsive";
 
 export default class Footer extends Component {
     constructor(props) {
@@ -8,14 +7,35 @@ export default class Footer extends Component {
 
         this.state = { 
           year: new Date().getFullYear(),
+          deviceWidth: 0,
+          deviceHeight: 0
         };
+    }
+      
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+      
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+      
+    updateWindowDimensions = () => {
+        this.setState({ deviceWidth: window.innerWidth, deviceHeight: window.innerHeight });
     }
 
     render() {
-        return (
-            <footer>
-                <div className="f-container">
-                    <MediaQuery minWidth={901}>
+        if(!this.state.deviceWidth){
+            return(
+                <footer>
+                <div className="f-container"><div className="center">Loading...</div></div>
+                </footer>
+            )
+        } else {
+            return (
+                <footer>
+                    <div className={this.state.deviceWidth >= 900 ? "f-container" : "hide"}>
                         <div className="left">
                             &nbsp;&nbsp;<Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/more">More</Link>&nbsp;&nbsp;
                         </div>
@@ -47,8 +67,8 @@ export default class Footer extends Component {
                             <a href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-tools"/> by douglasrcjames</a> 
                             &nbsp;&nbsp;
                         </div>
-                    </MediaQuery>
-                    <MediaQuery maxWidth={900}>
+                    </div>
+                    <div className={this.state.deviceWidth < 900 ? "f-container" : "hide"}>
                         <div>
                             {/* TODO: update social links */}
                             <a href="https://www.linkedin.com/in/douglasrcjames" target="_blank" rel="noopener noreferrer" className="black">
@@ -77,9 +97,10 @@ export default class Footer extends Component {
                         <div className="s-padding-b">
                             <Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/more">More</Link> 
                         </div>
-                    </MediaQuery>
-                </div>
-            </footer>
-        )
+                    </div>
+                </footer>
+            )
+        }
+        
     }
 }

@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Helmet } from 'react-helmet';
 import ContactForm from '../misc/ContactForm';
 
 export default class Home extends Component {
     render() {
         return (
             <div className="wrapper">
+                <Helmet>
+                    <title>Home | Doug's React Boiler</title>
+                </Helmet>
                 <h1>Home</h1>
                 {/* TODO: update content */}
                 <p>Welcome to Doug's React Boiler! Click around a bit, it's a clean slate for you!</p>

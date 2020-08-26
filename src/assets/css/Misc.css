@@ -45,7 +45,7 @@
     display: inline;
 }
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* 

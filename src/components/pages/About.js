@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 export default class About extends Component {
     render() {
         return (
             <div className="wrapper">
+                <Helmet>
+                    <title>About | Doug's React Boiler</title>
+                </Helmet>
                 <h1>About</h1>
                 {/* TODO: update content */}
                 <p>
