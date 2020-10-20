@@ -77,6 +77,7 @@ Prompted for your firebase credentials, input them
  15. $ `Do you want to install dependencies with npm now?` Yes
  16. $ `What do you want to use as your public directory?` build
  17. $ `Configure as a single-page app (rewrite all urls to /index.html)?` Yes
+ 
  Storage setup is: 
  18.  $ `What file should be used for Storage Rules?` storage.rules
 
