@@ -1,3 +1,5 @@
+@import "variables";
+  
    /* ---------------------------------------------- */
   /* Alignment CSS contains styles such as margins, */
  /*  padding, width, containers, and positioning.  */
@@ -39,19 +41,19 @@ body {
         padding: 1%;
     }
 
-    .l-container {
+    .lg-container {
         margin: auto;
         width: 70%;
         padding: 1%;
     }
 
-    .m-container {
+    .md-container {
         margin: auto;
         width: 50%;
         padding: 1%;
     }
 
-    .s-container {
+    .sm-container {
         margin: auto;
         width: 25%;
         padding: 1%;
@@ -82,19 +84,19 @@ body {
         padding: 1%;
     }
 
-    .l-container {
+    .lg-container {
         margin: auto;
         width: 90%;
         padding: 1%;
     }
 
-    .m-container {
+    .md-container {
         margin: auto;
         width: 80%;
         padding: 1%;
     }
 
-    .s-container {
+    .sm-container {
         margin: auto;
         width: 70%;
         padding: 1%;
@@ -125,19 +127,19 @@ body {
         padding: 1%;
     }
 
-    .l-container {
+    .lg-container {
         margin: auto;
         width: 95%;
         padding: 1%;
     }
 
-    .m-container {
+    .md-container {
         margin: auto;
         width: 95%;
         padding: 0.5%;
     }
 
-    .s-container {
+    .sm-container {
         margin: auto;
         width: 95%;
         padding: 0.5%;
@@ -149,29 +151,29 @@ body {
 * Responsive Width
 */
 @media screen and (max-width: 900px) {
-    .s-width {
+    .sm-width {
         width: 90% !important;
     }
 
-    .m-width {
+    .md-width {
         width: 100% !important;
     }
 
-    .l-width {
+    .lg-width {
         width: 90% !important;
     }
 }
 
 @media screen and (min-width: 901px) {
-    .s-width {
+    .sm-width {
         width: 25% !important;
     }
 
-    .m-width {
+    .md-width {
         width: 50% !important;
     }
 
-    .l-width {
+    .lg-width {
         width: 75% !important;
     }
 }
@@ -261,72 +263,72 @@ body {
     padding: 0px !important;
 }
 
-.s-padding-r {
+.sm-padding-r {
     padding: 0 1% 0 0;
 }
 
-.s-padding-l {
+.sm-padding-l {
     padding: 0 0 0 1%;
 }
 
-.s-padding-r-l {
+.sm-padding-r-l {
     padding: 0 1% 0 1%;
 }
 
-.s-padding-b-r-l {
+.sm-padding-b-r-l {
     padding: 0 1% 1% 1%;
 }
 
 
-.l-padding-r {
+.lg-padding-r {
     padding: 0 10% 0 0;
 }
 
-.s-padding-t {
+.sm-padding-t {
     padding: 1% 0 0 0;
 }
 
-.s-padding-b {
+.sm-padding-b {
     padding: 0 0 1% 0;
 }
 
-.m-padding-t {
+.md-padding-t {
     padding: 5% 0 0 0;
 }
 
-.m-padding-b {
+.md-padding-b {
     padding: 0 0 5% 0;
 }
 
-.m-padding-r-l {
+.md-padding-r-l {
     padding: 0 5% 0 5%;
 }
 
-.m-padding-r {
+.md-padding-r {
     padding: 0 5% 0 0;
 }
 
-.l-padding-r-l {
+.lg-padding-r-l {
     padding: 0 10% 0 10%;
 }
 
-.s-padding {
+.sm-padding {
     padding: 1%;
 }
 
-.s-padding-t-b {
+.sm-padding-t-b {
     padding: 1% 0 1% 0;
 }
 
-.m-padding {
+.md-padding {
     padding: 5%;
 }
 
-.l-padding {
+.lg-padding {
     padding: 10%;
 }
 
-.l-padding-b {
+.lg-padding-b {
     padding: 0 0 10% 0;
 }
 
@@ -346,59 +348,59 @@ body {
     margin: 0.5% 0% 0.5% 0%;
 }
 
-.s-margin {
+.sm-margin {
     margin: 1%;
 }
 
-.s-margin-t {
+.sm-margin-t {
     margin: 1% 0% 0% 0%;
 }
 
-.s-margin-r-l {
+.sm-margin-r-l {
     margin: 0 1% 0 1%;
 }
 
-.s-margin-r {
+.sm-margin-r {
     margin: 0 1% 0 0;
 }
 
-.s-margin-l {
+.sm-margin-l {
     margin: 0 0 0 1%;
 }
 
-.s-margin-b { 
+.sm-margin-b { 
     margin: 0 0 1% 0;
 }
 
-.s-margin-t-b {
+.sm-margin-t-b {
     margin: 1% 0% 1% 0%;
 }
 
-.m-margin {
+.md-margin {
     margin: 5%;
 }
 
-.m-margin-t {
+.md-margin-t {
     margin: 5% 0 0 0;
 }
 
-.m-margin-b {
+.md-margin-b {
     margin: 0 0 5% 0;
 }
 
-.m-margin-t-b {
+.md-margin-t-b {
     margin: 5% 0% 5% 0%;
 }
 
-.l-margin {
+.lg-margin {
     margin: 10%;
 }
 
-.l-margin-b {
+.lg-margin-b {
     margin: 0 0 10% 0;
 }
 
-.l-margin-r {
+.lg-margin-r {
     margin: 0 15% 0% 0% !important;
 }
 
