@@ -132,13 +132,13 @@ body {
 /* 
 * Responsive Width
 */
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 901px) {
     .sm-width {
-        width: 90% !important;
+        width: 50% !important;
     }
 
     .md-width {
-        width: 100% !important;
+        width: 75% !important;
     }
 
     .lg-width {
@@ -146,17 +146,17 @@ body {
     }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (max-width: 900px) {
     .sm-width {
-        width: 25% !important;
+        width: 70% !important;
     }
 
     .md-width {
-        width: 50% !important;
+        width: 80% !important;
     }
 
     .lg-width {
-        width: 75% !important;
+        width: 90% !important;
     }
 }
 
