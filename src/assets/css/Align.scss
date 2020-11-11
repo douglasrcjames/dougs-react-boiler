@@ -19,21 +19,14 @@ body {
 /* Large */
 @media screen and (min-width: 1181px) {
     .wrapper {
-        /* For outer div holding the body */
         margin: 0 auto;
         width: 75%;
-        padding: 2% 0 0 0;
+        padding: 3% 0;
     }
 
     .wrapper-w-img {
         padding: 0 5% 0 7%; 
       }
-
-    .top-wrapper {
-        margin: 0 auto;
-        width: 100%;
-        padding: 3% 0 0 0;
-    }
 
     .xl-container {
         margin: auto;
@@ -65,18 +58,12 @@ body {
     .wrapper {
         margin: 0 auto;
         width: 80%;
-        padding: 2% 0 0 0;
+        padding: 2% 0;
     }
 
     .wrapper-w-img {
-        padding: 0 1% 0 1%; 
+        padding: 0 1%;
       }
-
-    .top-wrapper {
-        margin: 0 auto;
-        width: 100%;
-        padding: 7.5% 0 0 0;
-    }
 
     .xl-container {
         margin: auto;
@@ -108,18 +95,13 @@ body {
     .wrapper {
         margin: 0 auto;
         width: 90%;
-        padding: 2% 0 0 0;
+        padding: 2% 0%;
     }
 
     .wrapper-w-img {
-        padding: 0 1% 0 1%; 
+        padding: 0 1%;
       }
 
-    .top-wrapper {
-        margin: 0 auto;
-        width: 100%;
-        padding: 15% 0 0 0;
-    }
 
     .xl-container {
         margin: auto;
@@ -428,6 +410,7 @@ body {
     padding-bottom: 10px;
     display: flex;
     align-items: center;
+    margin-left: 10px;
   }
 
   @media screen and (max-width: 900px) {

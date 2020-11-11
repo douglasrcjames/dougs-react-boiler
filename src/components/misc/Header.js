@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink, Link, withRouter } from "react-router-dom";
+import { HashLink as HashNavLink } from 'react-router-hash-link';
+
 import "../../assets/css/Header.scss";
 
 class Header extends Component {
@@ -31,6 +33,11 @@ class Header extends Component {
                             activeClassName="nav-select">
                             About
                         </NavLink>
+                        <HashNavLink 
+                            to="/#Contact" 
+                            className="md-blue-btn nav-button">
+                            Contact
+                        </HashNavLink>
                     </div>
                     
                 </nav>

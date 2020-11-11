@@ -11,16 +11,18 @@
 
 .nav-l-text {
     font-size: 2.5rem;
-    color: black;
+    color: $black;
     vertical-align: middle;
     display: inline-block;
     font-weight: 700;
+    margin-left: 10px;
+    color: $blue
 }
 
 .nav-links {
     float: right;
     text-align: right;
-    padding-right: 25px;
+    padding-right: 50px;
 }
 
 .nav-link {
@@ -29,7 +31,7 @@
     height: 75px;
     line-height: 75px;
     color: $black !important;
-    padding: 0px 10px 0px 10px;
+    padding: 0 25px;
     font-size: 20px;
   }
 
@@ -40,6 +42,10 @@
 .nav-select {
     color: $blue !important;
     text-decoration: underline !important;
+}
+
+.nav-button {
+    margin-left: 25px;
 }
 
 /* Mobile */

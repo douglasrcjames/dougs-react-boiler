@@ -19,9 +19,11 @@ export default class About extends Component {
                 </p>
 
                 <div className="center-text">
-                    <button>
-                        <Link to="/bad-link">See 404 error</Link>
-                    </button>
+                    <Link to="/bad-link">
+                        <button className="md-blue-btn">
+                            See 404 error
+                        </button>
+                    </Link>
                 </div>
 
                 <p>

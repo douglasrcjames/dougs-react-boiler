@@ -69,12 +69,25 @@
 /*
 * Background colors 
 */
-.background-blue {
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+    padding: 20px 0;
+  }
+  
+.bg-blue {
     background: $blue
 }
 
-.background-white {
+.bg-white {
     background: $white
+}
+
+.bg-black {
+    background: $black
 }
 
 /* 
@@ -138,6 +151,10 @@ tbody tr:hover {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+/* Full width backgrounds */
+
+
 
 /* 
 * Misc 

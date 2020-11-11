@@ -27,13 +27,33 @@ select:focus {
 }
 
 textarea {
-    font-family: $roboto-regular;
-    font-size: 16px;
-    width: 100%;
-    height: 150px;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    border: 1px solid $dark-grey;
-    border-radius: 4px;
-    background-color: white;
-  }
+  font-family: $roboto-regular;
+  font-size: 16px;
+  width: 100%;
+  height: 150px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 1px solid $dark-grey;
+  border-radius: 4px;
+  background-color: white;
+}
+
+// Buttons
+.md-blue-btn {
+  background-color: $blue;
+  font-family: $roboto-bold;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 35px;
+  color: $white;
+  border: $light-grey solid 1px; 
+  cursor: pointer;
+}
+
+.md-blue-btn:hover {
+  background-color: $light-blue;
+}
+
+.md-blue-btn:focus { 
+  border: none;
+}
