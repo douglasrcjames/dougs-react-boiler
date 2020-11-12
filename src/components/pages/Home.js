@@ -24,7 +24,7 @@ export default class Home extends Component {
                         </Col>
                         <Col xs={12} sm={3}>
                             <i className="fas fa-tree xl-icon orange" />
-                            <h3>Orange Column 2</h3>
+                            <h3>Orange Column</h3>
                             <p>More information below</p>
                         </Col>
                         <Col xs={12} sm={3}>
@@ -50,7 +50,7 @@ export default class Home extends Component {
             </div>
             <div className="full-width bg-blue">
                 <div className="wrapper white">
-                    <h1 className="white">Why the long text?</h1>
+                    <h1 className="white no-margin">Why the long text?</h1>
                     <p>
                         Testing that the Contact anchor works! Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
                         Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 

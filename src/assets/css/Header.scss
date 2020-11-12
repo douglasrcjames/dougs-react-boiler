@@ -45,12 +45,14 @@
 }
 
 .nav-button {
+    text-decoration: none !important;
+    color: $white !important;
     margin-left: 25px;
 }
 
 /* Mobile */
 @media screen and (max-width: 901px) {
-    .nav-l-text {
+    .nav-lg-text {
         font-size: 1.2rem !important;
     }
     
