@@ -87,39 +87,86 @@ Prompted for your firebase credentials, input them
 This will build your current setup and deploy everything including Functions, Firestore, Storage, etc rules, and Hosting to Firebase.
 
 ### Other commands: 
-- Set Firebase config variables:
+- Set Firebase config variables:  
 $ `firebase functions:config:set emails.hello.user="email@email.com" emails.hello.password="1234password"`
 
-- View the current Firebase config variables:
+- View the current Firebase config variables:  
 $ `firebase functions:config:get`
 
-- Call those firebase.config() variables:
+- Call those firebase.config() variables:  
  $ `functions.config().emails.hello.user`
+
+- Deploy only the Functions:  
+ $ `firebase deploy --only functions`
+
+- Deploy only specific Functions:  
+ $ `firebase deploy --only functions:func1,functions:func2`
+
+- Deploy only Firestore rules:  
+ $ `firebase deploy --only firestore:rules`
+
+- Deploy only hosting:  
+ $ `firebase deploy --only hosting`
+
+- Deploy everything with a message:  
+ $ `firebase deploy -m "Deploying the best new feature ever."`
+
+- Use the --debug command appended to the end to get more info:  
+ $ `firebase deploy --debug`
 
 - Setup multiple projects in the same folder, you can add alias for each project (1 will be default):
  $ `firebase use --add`
 
-- For interacting with specific alias, use firebase commands as normal, but with the `--project=alias` suffix: 
+- For interacting with specific alias, use firebase commands as normal, but with the `--project=alias` suffix:  
  $ `firebase deploy --project=alias`
  $ `firebase functions:config:set --project=alias --only functions`
+ 
+### One Firebase project, multiple hosting URLs
+1. Name the two targets you wish:  
+ $ `firebase target:apply hosting test project-name`  
+ $ `firebase target:apply hosting live project-name`  
+ 
+2. Then update `firebase.json` file like so:  
+```
+...
+"hosting": [
+    {
+      "target": "test",
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "live",
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
 
-- Deploy only the Functions:
- $ `firebase deploy --only functions`
+```  
 
-- Deploy only specific Functions:
- $ `firebase deploy --only functions:func1,functions:func2`
-
-- Deploy only Firestore rules:
- $ `firebase deploy --only firestore:rules`
-
-- Deploy only hosting:
- $ `firebase deploy --only hosting`
-
-- Deploy everything with a message:
- $ `firebase deploy -m "Deploying the best new feature ever."`
-
-- Use the --debug command appended to the end to get more info:
- $ `firebase deploy --debug`
+3. Then deploy to specific target like so:  
+ $ `firebase deploy --only hosting:test`
 
 ## Learn More
 
