@@ -114,7 +114,7 @@ $ `firebase functions:config:get`
 - Use the --debug command appended to the end to get more info:  
  $ `firebase deploy --debug`
 
-- Setup multiple projects in the same folder, you can add alias for each project (1 will be default):
+- Setup multiple projects in the same folder, you can add alias for each project (1 will be default):  
  $ `firebase use --add`
 
 - For interacting with specific alias, use firebase commands as normal, but with the `--project=alias` suffix:  
