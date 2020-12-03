@@ -30,7 +30,7 @@ export default class Footer extends Component {
             <footer>
                 <div className={this.state.deviceWidth >= 900 ? "f-container" : "hide"}>
                     <div className="left">
-                        &nbsp;&nbsp;<Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/more">More</Link>&nbsp;&nbsp;
+                        &nbsp;&nbsp;<Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/credits">Credits</Link>&nbsp;&nbsp;
                     </div>
 
                     <div className="center">
@@ -88,7 +88,7 @@ export default class Footer extends Component {
                         <a href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-tools"/> by douglasrcjames</a> 
                     </div>
                     <div className="s-padding-b">
-                        <Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/more">More</Link> 
+                        <Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/credits">Credits</Link> 
                     </div>
                 </div>
             </footer>

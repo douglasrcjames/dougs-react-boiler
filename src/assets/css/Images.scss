@@ -65,6 +65,47 @@ img.xl-em {
     height: 2em;
 }
 
+// Video containers
+.sm-video-container {
+    width: 30% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.md-video-container {
+    width: 60% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+@media screen and (max-width: 900px) {
+    .sm-video-container {
+        width: 80% !important;
+    }
+
+    .md-video-container {
+        width: 90% !important;
+    }
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 /* 
 * Misc 
 */

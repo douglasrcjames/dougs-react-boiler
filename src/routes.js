@@ -7,6 +7,7 @@ import { Page404 } from "./components/misc/Page404";
 // Pages
 import Home from './components/pages/Home'
 import About from './components/pages/About';
+import Credits from './components/pages/Credits';
 
 class Routes extends Component {
     render() {
@@ -14,6 +15,7 @@ class Routes extends Component {
             <Switch>
                 <Route exact path="/" component={withTracker(Home)} />
                 <Route exact path="/about" component={withTracker(About)} />
+                <Route exact path="/credits" component={withTracker(Credits)} />
                 <Route component={withTracker(Page404)} />
             </Switch>
         )
