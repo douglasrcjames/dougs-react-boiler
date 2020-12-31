@@ -120,6 +120,7 @@ $ `firebase functions:config:get`
 - For interacting with specific alias, use firebase commands as normal, but with the `--project=alias` suffix:  
  $ `firebase deploy --project=alias`
  $ `firebase functions:config:set --project=alias --only functions`
+ $ `firebase deploy --only functions:onUserUpdated --project test`
  
 ### One Firebase project, multiple hosting URLs
 1. Name the two targets you wish:  
