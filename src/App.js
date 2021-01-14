@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router } from 'react-router-dom';
-
+import { HelmetProvider } from 'react-helmet-async';
 import history from './history';
 import Routes from "./routes";
 
@@ -20,13 +20,16 @@ import ScrollToTop from "./components/misc/ScrollToTop";
 
 function App() {
   return (
-    <Router history={history}>
-      <ScrollToTop>
-        <Header />
-        <Routes />
-        <Footer />
-      </ScrollToTop>
-    </Router>
+    <HelmetProvider>
+      <Router history={history}>
+        <ScrollToTop>
+          <Header />
+          <Routes />
+          <Footer />
+        </ScrollToTop>
+      </Router>
+    </HelmetProvider>
+    
   );
 }
 

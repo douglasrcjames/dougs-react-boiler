@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default class About extends Component {
+
     render() {
         return (
             <div className="wrapper">

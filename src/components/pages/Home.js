@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ContactForm from '../misc/ContactForm';
 
 export default class Home extends Component {
