@@ -117,6 +117,9 @@ $ `firebase functions:config:get`
 - Setup multiple projects in the same folder, you can add alias for each project (1 will be default):  
  $ `firebase use --add`
 
+- Export Firestore indexes:
+ $ `firebase firestore:indexes`
+
 - For interacting with specific alias, use firebase commands as normal, but with the `--project=alias` suffix:  
  $ `firebase deploy --project=alias`
  $ `firebase functions:config:set --project=alias --only functions`
