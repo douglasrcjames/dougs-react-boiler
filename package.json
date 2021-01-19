@@ -9,9 +9,7 @@
     "firebase": "^7.24.0",
     "formik": "^2.2.3",
     "node-sass": "^4.14.1",
-    "papaparse": "^5.3.0",
     "react": "^16.14.0",
-    "react-csv": "^2.0.3",
     "react-dom": "^16.14.0",
     "react-flexbox-grid": "^2.1.2",
     "react-ga": "^3.2.0",
@@ -43,9 +41,6 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.167",
-    "@types/papaparse": "^5.2.4",
-    "@types/react-csv": "^1.1.1",
     "react-scripts": "^3.4.4"
   }
 }
