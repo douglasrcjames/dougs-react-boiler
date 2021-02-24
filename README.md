@@ -3,7 +3,7 @@
 This project was built from Doug's React.js website boilerplate template ([dougs-react-boiler](https://github.com/douglasrcjames/dougs-react-boiler)) and was further bootstrapped from [Create React App](https://github.com/facebook/create-react-app). In this setup, we have Doug's 
 base CSS library, base React components (like Header & Footer), directories structured, React Router ready to go, and more! 
 
-Check all `TODO` tags to denote changes that might need to be made depending on your specific project. Find and replace `dougs-react-boiler` or `Doug's React Boiler` in all project files for naming specific items. You may also need to delete files: `.firebaserc`, `firestore.indexes.json`, and `firebase.json` for a fresh firebase initialization.
+Check all `TODO` tags to denote changes that might need to be made depending on your specific project. Find and replace `dougs-react-boiler` or `Doug's React Boiler` in all project files for naming specific items (including `package.json`). You may also need to delete files: `.firebaserc`, `firestore.indexes.json`, and `firebase.json` for a fresh firebase initialization.
 
 Live demo: https://dougs-react-boiler.web.app/
 
@@ -79,7 +79,7 @@ Prompted for your firebase credentials, input them
  17. $ `Configure as a single-page app (rewrite all urls to /index.html)?` Yes
  18. $ `Set up automatic builds and deploys with GitHub?` No 
  
- Storage setup is: 
+ Storage setup is:  
  19.  $ `What file should be used for Storage Rules?` storage.rules
 
 ### `npm run-script build` then `firebase deploy`

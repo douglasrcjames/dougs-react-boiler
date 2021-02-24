@@ -6,7 +6,6 @@ admin.initializeApp(functions.config().firebase);
 
 export const onMessageCreated = functions.firestore.document('messages/{messageId}')
   .onCreate(async (snap: { data: () => any; }) => {
-    console.log("Message create heard! Starting inner...")
     const newValue = snap.data();
     try {
         console.log("Started try{}...")
