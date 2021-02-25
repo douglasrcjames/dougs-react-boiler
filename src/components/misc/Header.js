@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink, Link, withRouter } from "react-router-dom";
 import { HashLink as HashNavLink } from 'react-router-hash-link';
-
+import logo from "../../assets/images/logos/logo512.png";
 import "../../assets/css/Header.scss";
 
 class Header extends Component {
@@ -14,7 +14,7 @@ class Header extends Component {
                         <img
                             className="nav-logo"
                             alt="logo"
-                            src={require("../../assets/images/logos/logo512.png")}
+                            src={logo}
                         />
                         <span className="nav-l-text">Doug's React Boiler</span>
                     </Link>
