@@ -127,8 +127,8 @@ $ `firebase functions:config:get`
  
 ### One Firebase project, multiple hosting URLs
 1. Name the two targets you wish:  
- $ `firebase target:apply hosting test project-name`  
- $ `firebase target:apply hosting live project-name`  
+ $ `firebase target:apply hosting test test-host-name`  
+ $ `firebase target:apply hosting live live-host-name`  
  
 2. Then update `firebase.json` file like so:  
 ```
