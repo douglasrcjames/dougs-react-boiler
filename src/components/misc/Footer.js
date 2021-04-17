@@ -87,7 +87,7 @@ export default class Footer extends Component {
                     <div>
                         <a href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-tools"/> by douglasrcjames</a> 
                     </div>
-                    <div className="s-padding-b">
+                    <div className="sm-padding-b">
                         <Link to="/about">About</Link> | <Link to="/terms">Terms &amp; Conditions</Link> | <Link to="/credits">Credits</Link> 
                     </div>
                 </div>
