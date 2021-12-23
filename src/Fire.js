@@ -1,7 +1,7 @@
 
 // TODO: pick firebase libraries you'll, delete the others so you aren't loading extra
 import firebase from 'firebase/app';
-import 'firebase/auth';        // for authentication
+// import 'firebase/auth';        // for authentication
 import 'firebase/storage';     // for storage
 import 'firebase/firestore';   // for cloud firestore
 import 'firebase/functions';   // for cloud functions
