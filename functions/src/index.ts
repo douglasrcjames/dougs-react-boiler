@@ -41,7 +41,7 @@ export const onMessageCreated = functions.firestore.document('messages/{messageI
         // Pack it
         const mailOptions = {
             from: `drcj.dev@gmail.com`,
-            to: 'douglasrcjames@gmail.com, drcj.dev@gmail.com',
+            to: 'douglasrcjames@gmail.com',
             replyTo: `${newValue.email}`,
             subject: `New Doug's React Boiler contact from ${newValue.name}`,
             text: newValue.message,
